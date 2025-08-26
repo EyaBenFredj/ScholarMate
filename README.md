@@ -1,8 +1,4 @@
-Here is your cleaned-up, properly formatted, and **ready-to-copy-paste** version of the README file. I've fixed markdown formatting, code blocks, indentation, and consistency issues to ensure it renders well on platforms like GitHub.
 
----
-
-```markdown
 # 📚 ScholarMate – AI Research Paper Assistant
 
 ScholarMate is an open-source, locally-running GenAI assistant that helps you **understand, analyze, and interact with research papers** using state-of-the-art language models, semantic search, and document parsing — all **100% free and private**.
