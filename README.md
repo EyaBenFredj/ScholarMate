@@ -30,9 +30,6 @@ ScholarMate/
 ├── rag_pipeline.py # Embedding, RAG, summarization, flashcards, etc.
 ├── requirements.txt # Python dependencies
 
-yaml
-Copier le code
-
 ---
 
 ## 🛠️ Tech Stack
@@ -56,38 +53,40 @@ Copier le code
 git clone https://github.com/yourusername/ScholarMate.git
 cd ScholarMate
 2. Set Up Python Environment
-bash
-Copier le code
 python -m venv venv
 venv\Scripts\activate  # or source venv/bin/activate on macOS/Linux
+
 3. Install Dependencies
-bash
-Copier le code
 pip install -r requirements.txt
+
 4. Install and Start Ollama (Local LLM)
+
 Download and install Ollama
 
 Pull a model:
 
-bash
-Copier le code
 ollama pull llama3
+
+
 Run the model:
 
-bash
-Copier le code
 ollama run llama3
+
+
 Leave that terminal open – it runs your LLM backend locally.
 
 5. Run ScholarMate
+
 In a separate terminal (with virtual env activated):
 
-bash
-Copier le code
 streamlit run app.py
-Open http://localhost:8501 in your browser.
+
+
+Open http://localhost:8501
+ in your browser.
 
 🧪 Usage Examples
+
 "Summarize the abstract"
 
 "What is the main contribution of the paper?"
@@ -103,6 +102,7 @@ Open http://localhost:8501 in your browser.
 "Extract tables with results"
 
 🛡️ Privacy & Cost
+
 💰 Free forever – no OpenAI or cloud API keys required
 
 🔒 100% private – runs entirely on your device
@@ -110,6 +110,7 @@ Open http://localhost:8501 in your browser.
 📶 Offline-capable – LLM inference and vector search are local
 
 📌 Roadmap
+
  Export chat history as PDF / Markdown
 
  Summarize citations with links to external databases
@@ -119,6 +120,7 @@ Open http://localhost:8501 in your browser.
  Deploy to Hugging Face Spaces (optional cloud demo)
 
 🙌 Contributing
+
 This is an open project!
 Feel free to:
 
@@ -131,9 +133,11 @@ Add better section detection
 Help with UI polish or deployment
 
 📄 License
+
 MIT License – feel free to use and adapt.
 
 ✨ Credits
+
 LLaMA 3 by Meta
 
 Ollama – local LLM runner
@@ -143,20 +147,3 @@ LangChain – RAG pipeline framework
 SentenceTransformers – powerful open-source embeddings
 
 Streamlit – fast ML app UI
-
-💬 Contact / Feedback
-Built by [Your Name]
-Find me on LinkedIn or GitHub
-
-yaml
-Copier le code
-
----
-
-✅ You can now paste this directly into your `README.md`.  
-Let me know if you want help:
-- Replacing your name and links
-- Deploying it online
-- Writing a LinkedIn post or GitHub release
-
-You’ve got something special here.
