@@ -1,3 +1,8 @@
+Here is your cleaned-up, properly formatted, and **ready-to-copy-paste** version of the README file. I've fixed markdown formatting, code blocks, indentation, and consistency issues to ensure it renders well on platforms like GitHub.
+
+---
+
+```markdown
 # 📚 ScholarMate – AI Research Paper Assistant
 
 ScholarMate is an open-source, locally-running GenAI assistant that helps you **understand, analyze, and interact with research papers** using state-of-the-art language models, semantic search, and document parsing — all **100% free and private**.
@@ -24,24 +29,28 @@ ScholarMate is an open-source, locally-running GenAI assistant that helps you **
 
 ## 🧱 Project Structure
 
+```
+
 ScholarMate/
-├── app.py # Streamlit app (main UI)
-├── pdf_utils.py # PDF parsing: text, sections, tables
-├── rag_pipeline.py # Embedding, RAG, summarization, flashcards, etc.
-├── requirements.txt # Python dependencies
+├── app.py              # Streamlit app (main UI)
+├── pdf\_utils.py        # PDF parsing: text, sections, tables
+├── rag\_pipeline.py     # Embedding, RAG, summarization, flashcards, etc.
+├── requirements.txt    # Python dependencies
+
+````
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer         | Tool / Library                      |
-|---------------|-------------------------------------|
+| Layer         | Tool / Library                                      |
+|---------------|-----------------------------------------------------|
 | 🧠 LLM         | [LLaMA3](https://ollama.com/library/llama3) via [Ollama](https://ollama.com) |
-| 🔍 Embeddings  | SentenceTransformers (MiniLM)       |
-| 📦 Vector DB   | FAISS (local, fast, open-source)    |
-| 📄 PDF Parsing | PyMuPDF + pdfplumber                |
-| 💬 UI          | Streamlit                           |
-| 🧠 RAG Logic   | LangChain + custom prompt design     |
+| 🔍 Embeddings  | SentenceTransformers (MiniLM)                       |
+| 📦 Vector DB   | FAISS (local, fast, open-source)                    |
+| 📄 PDF Parsing | PyMuPDF + pdfplumber                                |
+| 💬 UI          | Streamlit                                           |
+| 🧠 RAG Logic   | LangChain + custom prompt design                    |
 
 ---
 
@@ -52,98 +61,60 @@ ScholarMate/
 ```bash
 git clone https://github.com/yourusername/ScholarMate.git
 cd ScholarMate
-2. Set Up Python Environment
+````
+
+### 2. Set Up Python Environment
+
+```bash
 python -m venv venv
-venv\Scripts\activate  # or source venv/bin/activate on macOS/Linux
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Install and Start Ollama (Local LLM)
+### 4. Install and Start Ollama (Local LLM)
 
-Download and install Ollama
+* Download and install [Ollama](https://ollama.com)
+* Pull a model:
 
-Pull a model:
-
+```bash
 ollama pull llama3
+```
 
+* Run the model:
 
-Run the model:
-
+```bash
 ollama run llama3
+```
 
+> 📝 Leave that terminal open – it runs your LLM backend locally.
 
-Leave that terminal open – it runs your LLM backend locally.
+### 5. Run ScholarMate
 
-5. Run ScholarMate
+In a **separate terminal** (with virtual environment activated):
 
-In a separate terminal (with virtual env activated):
-
+```bash
 streamlit run app.py
+```
 
+Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
-Open http://localhost:8501
- in your browser.
+---
 
-🧪 Usage Examples
+## 🧪 Usage Examples
 
-"Summarize the abstract"
+* `"Summarize the abstract"`
+* `"What is the main contribution of the paper?"`
+* `"Explain the method section like I'm 5"`
+* `"List key findings"`
+* `"Create flashcards for this paper"`
+* `"Compare this paper with another one"`
+* `"Extract tables with results"`
 
-"What is the main contribution of the paper?"
-
-"Explain the method section like I'm 5"
-
-"List key findings"
-
-"Create flashcards for this paper"
-
-"Compare this paper with another one"
-
-"Extract tables with results"
-
-🛡️ Privacy & Cost
-
-💰 Free forever – no OpenAI or cloud API keys required
-
-🔒 100% private – runs entirely on your device
-
-📶 Offline-capable – LLM inference and vector search are local
-
-📌 Roadmap
-
- Export chat history as PDF / Markdown
-
- Summarize citations with links to external databases
-
- Add Whisper or voice interface for spoken Q&A
-
- Deploy to Hugging Face Spaces (optional cloud demo)
-
-🙌 Contributing
-
-This is an open project!
-Feel free to:
-
-Suggest new features
-
-Improve prompts
-
-Add better section detection
-
-Help with UI polish or deployment
-
-📄 License
-
-MIT License – feel free to use and adapt.
-
-✨ Credits
-
-LLaMA 3 by Meta
-
-Ollama – local LLM runner
-
-LangChain – RAG pipeline framework
-
-SentenceTransformers – powerful open-source embeddings
-
-Streamlit – fast ML app UI
