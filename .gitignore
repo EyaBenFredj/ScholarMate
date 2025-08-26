@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+.venv/
+
+# VS Code/JetBrains IDEs
+.vscode/
+.idea/
+
+# Env variables
+.env
+
+# Streamlit state
+.streamlit/
+
+# FAISS vector storage
+vector_store/
+
+# System files
+.DS_Store
+Thumbs.db

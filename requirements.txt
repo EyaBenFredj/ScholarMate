@@ -1,0 +1,11 @@
+streamlit
+PyMuPDF
+faiss-cpu
+sentence-transformers
+langchain
+tqdm
+ollama
+pdfplumber
+pandas
+google-generativeai
+python-dotenv
